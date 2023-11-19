@@ -1,0 +1,33 @@
+<!--This tells the browser to render the HTML codes as HTML5 specifically.-->
+<!DOCTYPE html> 
+
+<html lang="en"
+
+    <head>
+        <!--Head houses the metadata that is invisable to the user, but used by search engines-->
+        <!-- The meta tag can be used to add a link preview, description of the site, character encoding etc.-->
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <!--Title, well... title adds a title to the site.-->
+        <title>Hangman</title>
+        <!--Link tags link to another document, here we are linking to our css stylesheet-->
+        <link rel = "stylesheet" href="./style.css">
+        <!--favicon here is the icon you will see for sites, such as found in the tab next to the title.-->
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!--Body holds the essential content of the site.-->
+        <h1>Hangman Game</h1>
+        <img src="hangman.png" alt=""Hangman" width="250" height="250">
+
+        <div id="word-container">
+            <!-- Display the word with underscores initially -->
+            <span id="word-display"></span>
+        </div>
+        <label for="guess-letter">Guess a letter: </label>
+        <input type="text" id="guess-letter" maxlength="1">
+        <button onclick="checkGuess()">Submit</button>
+    <script src="index.js"></script>
+    </body>
+</html>
